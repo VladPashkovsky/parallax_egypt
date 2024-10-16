@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Egypt</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+  <a href="#" class="logo">Explore</a>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Destination</a></li>
+    <li><a href="#">Contacts</a></li>
+  </ul>
+</header>
+
+<section class="banner">
+  <img src="images/sky.jpg" alt="Sky" id="sky">
+  <img src="images/pyramid.png" alt="Pyramid" id="pyramid">
+  <img src="images/text.png" alt="Text" id="text">
+  <img src="images/stone.png" alt="Stone" id="stone">
+  <img src="images/man.png" alt="Man" id="man">
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="textBx">
+      <h2 class="title">Welcome to Egypt</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eaque omnis reiciendis. Accusantium animi
+        blanditiis culpa cum debitis deleniti dolorem dolorum eaque eius excepturi fugit iste, magni maiores minus natus
+        necessitatibus non pariatur sapiente vel voluptates. A ad animi corporis deserunt dicta dolorem eaque eius error
+        incidunt itaque iusto labore maiores minus mollitia natus nesciunt nobis non ratione rem repellat rerum
+        temporibus totam vel, veniam veritatis voluptas voluptate, voluptates? Consequuntur laudantium quas quod quos?
+        Accusamus architecto beatae commodi cumque cupiditate, deleniti dolor doloremque enim eveniet exercitationem id
+        inventore itaque nam quisquam rerum temporibus unde? <br></br>
+        A aliquam cum delectus eveniet facilis id, inventore ipsa
+        laborum nihil non officia, recusandae repudiandae rerum sapiente sunt vitae voluptatem? Animi, consectetur eum,
+        exercitationem libero neque nesciunt, obcaecati pariatur quod similique tempora voluptate voluptatem? Magnam,
+        nam, repudiandae. At consectetur deleniti, dolore dolorum enim et eum explicabo fuga ipsam neque quaerat quo
+        sequi suscipit veniam voluptas voluptate.veniam veritatis voluptas voluptate, voluptates? Consequuntur
+        laudantium quas quod quos?
+        Accusamus architecto beatae commodi cumque cupiditate, deleniti dolor doloremque enim eveniet exercitationem id
+        inventore itaque nam quisquam rerum temporibus unde? A aliquam cum delectus eveniet facilis id, inventore
+        ipsa...
+      </p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="imgBx">
+      <img src="images/img1.jpg" alt="img1">
+    </div>
+  </div>
+</section>
+<script>
+  let pyramid = document.getElementById('pyramid')
+  let text = document.getElementById('text')
+  let stone = document.getElementById('stone')
+  let man = document.getElementById('man')
+  window.addEventListener('scroll', function() {
+    let value = window.scrollY
+    pyramid.style.right = value * 0.25 + 'px'
+    text.style.left = value * 2 + 'px'
+    stone.style.right = value * 1 + 'px'
+    man.style.left = value * 0.5 + 'px'
+  })
+</script>
+</body>
+</html>
